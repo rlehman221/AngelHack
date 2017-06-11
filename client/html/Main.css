@@ -47,6 +47,27 @@ Tinder Template by Miami
     background-color: #fff;
     box-shadow: 2px 2px 2px #c0c0c0;
 }
+.first {
+    text-align:center;
+    border: 15px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+
+
+}
+.second {
+    text-align:center;
+    border: 15px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+    width: 154px;
+}
 .style1{
     text-align: center;
     margin-left: 23px;
@@ -56,9 +77,11 @@ Tinder Template by Miami
 
 }
 .skill1 {
-    width: 40%;
+    
+    width: 20%;
     margin-top: 10px;
-    margin-left: 23px;
+    margin-left: 30px;
+    margin-right: 65px;
     display: inline-block;
 }
 .skill2 {
@@ -102,7 +125,7 @@ Tinder Template by Miami
     color: white;}
 .tSkillLabel {
     margin-top: 4px;
-    margin-left: 23px;
+    margin-left: 30px;
     text-align: left;
     width: 100%;
     font-size: 20px;
@@ -160,9 +183,9 @@ Tinder Template by Miami
     border-radius: 50%;
 }
 .round-button {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 70px;
     display:block;
     width:50px;
     line-height:50px;
@@ -264,3 +287,6 @@ Tinder Template by Miami
     font-family: 'Helvetica', sans-serif;
     font-style: italic;
 }
+
+
+

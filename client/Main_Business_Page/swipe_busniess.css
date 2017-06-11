@@ -35,6 +35,9 @@ a
   opacity: 0;
   z-index: 10;
 }
+.spacing {
+  padding-top: 5px;
+}
 .button {
     background-color: #4CAF50; /* Green */
     border: none;
@@ -44,6 +47,9 @@ a
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
+}
+.companyInfo {
+  padding-left: 10px;
 }
 .rotate-right {
   transform: rotate(-30deg) scale(0.8);
@@ -62,13 +68,14 @@ a
     border: 8px solid #5C8EDC;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 110px;
     background: #222;
     width: 150;
     height: 150px;
-    background-size: auto 100% !important;
-    background-position: center top;
+    background-size: auto 75% !important;
+    background-position: center;
     background-repeat: no-repeat;
+    background-color: white;
 }
 .like {
   border-radius: 5px;

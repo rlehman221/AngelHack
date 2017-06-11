@@ -5,6 +5,7 @@ Tinder Template by Miami
 .tbg {
     height: 720px;
     width: 400px;
+
     background-image: url("Backround - 2.png");
     background-size: 100% 100%;
     margin: 0 auto;
@@ -51,6 +52,27 @@ Tinder Template by Miami
     background-color: #fff;
     box-shadow: 2px 2px 2px #c0c0c0;
 }
+.first {
+    text-align:center;
+    border: 15px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+
+
+}
+.second {
+    text-align:center;
+    border: 15px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+    width: 154px;
+}
 .style1{
     text-align: center;
     margin-left: 23px;
@@ -60,9 +82,11 @@ Tinder Template by Miami
 
 }
 .skill1 {
-    width: 40%;
+    
+    width: 20%;
     margin-top: 10px;
-    margin-left: 23px;
+    margin-left: 30px;
+    margin-right: 65px;
     display: inline-block;
 }
 .skill2 {
@@ -87,16 +111,27 @@ Tinder Template by Miami
 
 .tphoto img {}
 * {text-shadow: none !important;}
+
 .tFirstName {
-    display: inline-block;
     text-align: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Helvetica', sans-serif;
     float: left;
     color: white;
 
 }
+
+.tLastName {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    margin-top: 5px;
+    color: white;}
+
+
 .highSchool {
     margin-left: 23px;
     margin-top: 10px;
@@ -119,7 +154,7 @@ Tinder Template by Miami
     display: inline-block;
     text-align: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Helvetica', sans-serif;
     float: left;
     color: white;
@@ -129,7 +164,7 @@ Tinder Template by Miami
     display: inline-block;
     text-align: center;
     width: 100%;
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Helvetica', sans-serif;
     float: left;
     color: white;
@@ -159,15 +194,7 @@ Tinder Template by Miami
     display: inline;
 }
 
-.tLastName {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-size: 20px;
-    font-family: 'Helvetica', sans-serif;
-    float: left;
-    margin-top: 5px;
-    color: white;}
+
 .yesButton {
 
     display: inline-block;
@@ -290,3 +317,6 @@ Tinder Template by Miami
     font-family: 'Helvetica', sans-serif;
     font-style: italic;
 }
+
+
+
