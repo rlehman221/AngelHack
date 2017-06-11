@@ -1,13 +1,16 @@
 /************************
 Tinder Template by Miami
 ************************/
+
 .tbg {
     height: 720px;
     width: 400px;
-    background-color: #fff;
+    background-image: url("Backround - 2.png");
+    background-size: 100% 100%;
     margin: 0 auto;
     border: 1px solid #c0c0c0;
 }
+
 .tbgwrap { padding: 10px; }
 .theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
 .theader i.fa-comments {
@@ -44,12 +47,137 @@ Tinder Template by Miami
     background-color: #fff;
     box-shadow: 2px 2px 2px #c0c0c0;
 }
+.style1{
+    text-align: center;
+    margin-left: 23px;
+    width: 87%;
+    margin-top: 155px;
+    border-top: .5px solid #8c8b8b;
+
+}
+.skill1 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill2 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill3 {
+
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill4 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+
 .tphoto img {}
-.tname {
-    padding: 15px;
+* {text-shadow: none !important;}
+.tFirstName {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;
+
+}
+.highSchool {
+    margin-left: 23px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;}
+.tSkillLabel {
+    margin-top: 4px;
+    margin-left: 23px;
+    text-align: left;
+    width: 100%;
     font-size: 20px;
     font-family: 'Helvetica', sans-serif;
     float: left;
+    color: white;}
+
+.tDescription {
+    margin-left: 23px;
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;}
+
+.flexFile {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+.arrowFormat {
+    float: right;
+    padding-right: 10px;
+    display: inline;
+}
+
+.tLastName {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    margin-top: 5px;
+    color: white;}
+.yesButton {
+
+    display: inline-block;
+}
+.noButton {
+    display: inline-block;
+}
+.right {
+    width: 100px;
+    height: 100px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgb(255,255,255,.5);
+}
+.img-circle {
+    border-radius: 50%;
+}
+.round-button {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display:block;
+    width:50px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 80%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #f5f5f5;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #262626;
 }
 .tname .age { font-weight: 200; }
 .tinfo { font-family: 'Helvetica', sans-serif; }
@@ -109,7 +237,7 @@ Tinder Template by Miami
     -ms-border-radius: 50%;
     position: relative;
     display: inline-block;
-    top: 48px;
+    top: 26px;
     left: 0px;
     border: 10px solid #f0f0f0;
 }
