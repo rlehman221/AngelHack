@@ -1,0 +1,291 @@
+/************************
+Tinder Template by Miami
+************************/
+.tbg {
+    height: 720px;
+    width: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+}
+.tbgwrap { padding: 10px; }
+.theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
+.theader i.fa-comments {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    position: relative;
+}
+.theader i.fa-cog {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    position: relative;
+}
+.tlogo { width: 100px; margin: 0 auto; padding: 10px; }
+.tlogo img {  }
+.tphoto {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    padding-bottom: 60px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #c0c0c0;
+}
+.tphoto img {}
+.tname {
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+}
+.tname .age { font-weight: 200; }
+.tinfo { font-family: 'Helvetica', sans-serif; }
+.tinfo .fa-users, .tinfo .fa-book {
+    color: #c0c0c0;
+    float: right;
+    position: relative;
+    font-size: 24px;
+    padding: 12px;
+}
+.tcontrols {}
+.tno {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    left: 25px;
+    border: 10px solid #f0f0f0;
+}
+.tno i {
+    color: #ff695b;
+    font-size: 80px;
+    padding: 17px 28px;
+}
+.ti {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    left: 12px;
+    top: 30px;
+    border: 10px solid #f0f0f0;
+}
+.ti .fa-info {
+    font-size: 23px;
+    padding: 15px 20px;
+    color: #398beb;
+}
+.tyes {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 48px;
+    left: 0px;
+    border: 10px solid #f0f0f0;
+}
+.tyes i {
+    color: #5de19c;
+    font-size: 60px;
+    padding: 35px 30px;
+}
+.credit {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2px 0px;
+}
+.credit a {
+    font-size: 7px;
+    letter-spacing: 5px;
+    color: #c0c0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+}
+.text {
+    font-size: 7px;
+    letter-spacing: 5px;
+    color: #c0c0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+}
+#inputFieldUsername{
+    padding-top: 25%;
+    text-align: center;
+}
+#inputFieldPassword{
+    padding-top: 7%;
+    text-align: center;
+}
+.inputField{
+     width: 75%;
+    height: 2rem;
+    
+}
+#questions{
+    padding-top: 5%;
+    text-align: center;
+}
+#loginButton{
+    padding-top: 23%;
+    text-align: center;
+}
+
+#buttons{
+    padding-top: 5%;
+    text-align: center;
+}
+
+#backButton{
+
+    padding-right: 8%;
+}
+
+#nextButton{
+
+    padding-left: 8%;
+}
+
+.buttondemoBasicUsage section {
+  background: #f7f7f7;
+  border-radius: 3px;
+  text-align: center;
+  margin: 1em;
+  position: relative !important;
+  padding-bottom: 10px; }
+
+.buttondemoBasicUsage md-content {
+  margin-right: 7px; }
+
+.buttondemoBasicUsage section .md-button {
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
+.buttondemoBasicUsage .label {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 14px;
+  opacity: 0.54; }
+
+.forgotPasswrod{
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.studentAndBusinessButton{
+    padding: 40px 60px;
+}
+.studentOrBusinessButton{
+    padding-top: 12%;
+    padding-bottom: 10%;
+}
+
+.questionPadding{
+    padding-top: 5%;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00A1CB;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: white}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+
+.background{
+    background-image:url("img/Background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;     
+}
+
+.backgroundLogin{
+    background-image:url("img/bckLogin.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;     
+}
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be foundin the LICENSE file at http://material.angularjs.org/HEAD/license.
+*/
