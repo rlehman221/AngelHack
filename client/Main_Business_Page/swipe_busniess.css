@@ -62,14 +62,13 @@ a
     border: 8px solid #5C8EDC;
     display: inline-block;
     margin-top: 10px;
-    margin-left: 100px;
+    margin-left: 10px;
     background: #222;
     width: 150;
     height: 150px;
     background-size: auto 100% !important;
     background-position: center top;
     background-repeat: no-repeat;
-
 }
 .like {
   border-radius: 5px;
