@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- SCROLLS -->
+  
+	<link rel="stylesheet" type="text/css" href="../Main.css">
+
+  <!-- SPELLS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script type="../flat-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="../index.js"></script>
+	<link rel="stylesheet" type="text/css" href="../flat-ui.min.css">
+	<script type="../buttons.js"></script>
+	<link rel="stylesheet" type="text/css" href="../buttons.css">
+	<link rel="stylesheet" type="text/css" herf="../demo.css">
+	<link rel="stylesheet" type="text/css" href="../font-awesome.css">
+	<script type="../modernizr.custom.79639.js"></script>
+
+</head>
+
+<body>
+	<div id="scrollArea" style="overflow:auto;">
+		<div class="tbg background">
+		
+			<div class="btn-toolbar center studentOrBusinessButton">
+		        <div class="btn-group">
+			         <a class="btn btn-primary studentAndBusinessButton" onclick="changeToStudent()"><span>Student</span></a>
+
+			          <a class="btn btn-primary studentAndBusinessButton" id="" onclick="changeToBusiness()"><span>Business</span></a>
+		       	</div>
+		    </div> <!-- /toolbar -->
+
+
+
+			<div id=business>
+				
+				<div id="questions">
+			       <input type="text" name="contactNameB" ng-model="user.password" required class="inputField form-control" value placeholder="Contact Name">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="addressB" ng-model="user.password" required class="inputField form-control" value placeholder="Address">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="phNumberB" ng-model="user.password" required class="inputField form-control" value placeholder="Phone Number">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="emailB" ng-model="user.password" required class="inputField form-control" value placeholder="Email">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="passwordB" ng-model="user.password" required class="inputField form-control" value placeholder="Passwrod">
+			    </div>	
+
+				<div id="questions">
+			       <input type="text" name="projectB" ng-model="user.password" required class="inputField form-control" value placeholder="What are you trying to build?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="industryB" ng-model="user.password" required class="inputField form-control" value placeholder="What industry are you in?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="timeLimitB" ng-model="user.password" required class="inputField form-control" value placeholder="How long will it take to complete?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="locationB" ng-model="user.password" required class="inputField form-control" value placeholder="Where is this project taking place?" >
+			    </div>		
+
+		   	</div>
+
+		    <div id="student">
+
+		    	<div id="questions">
+			       <input type="text" name="fullName" ng-model="user.password" required class="inputField form-control" value placeholder="Full Name">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="school" ng-model="user.password" required class="inputField form-control" value placeholder="School">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="dob" ng-model="user.password" required class="inputField form-control" value placeholder="DOB (MM/DD/YY)">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="phNumber" ng-model="user.password" required class="inputField form-control" value placeholder="Phone Number?">
+			    </div>
+
+			    <div id="questions">
+			       <input type="text" name="skills" ng-model="user.password" required class="inputField form-control" value placeholder="What skills do you have?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="industry" ng-model="user.password" required class="inputField form-control" value placeholder="What industries are you interested in?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="timeLimit" ng-model="user.password" required class="inputField form-control" value placeholder="Time limit for project?">
+			    </div>	
+
+			    <div id="questions">
+			       <input type="text" name="location" ng-model="user.password" required class="inputField form-control" value placeholder="Where are you located?">
+			    </div>	
+
+			</div>
+
+			<div id="buttons">
+		    	<span id="backButton">
+			    	<a class="button button-circle button-flat-primary" style="width: 100px;
+				    height: 100px;
+				    line-height: 100px;">Back
+			    	</a>
+		    	</span>
+		    	<span id="nextButton">
+			    	<a class="button button-circle button-flat-primary" style="width: 100px;
+				    height: 100px;
+				    line-height: 100px;">Next
+			    	</a>
+		    	</span>
+	   		 </div>
+
+	   	</div>
+
+	</div>
+</body>
+</html>

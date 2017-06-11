@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 <html lang="en-US">
+
+<head>
+  <!-- SCROLLS -->
+  
+	<link rel="stylesheet" type="text/css" href="../Main.css">
+
+  <!-- SPELLS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script src="../index.js"></script>
+	<script type="../flat-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../flat-ui.min.css">
+	<script type="../buttons.js"></script>
+	<link rel="stylesheet" type="text/css" href="../buttons.css">
+	
+</head>
 
 <body>
 
-<div ng-app="">
-  <p>Name : <input type="text" ng-model="name"></p>
-  <h1>Hello {{name}}</h1>
-</div>
+
+<form action="http://localhost:5000/login" method="post"> 
+
+	<div class="tbg backgroundLogin">
+	    <div class="tlogo" style="padding-top: 80px; ">
+	      <img src="../img/Logo.png" alt="Tinder Logo" title="Tinder Logo" style="size: 40px 80px; margin-left: -50px" />
+		</div>
+
+		<div id="inputFieldUsername">
+	       <input type="text" name="email" required class="inputField form-control" value placeholder="Email">
+	    </div>	
+
+	    <div id="inputFieldPassword">
+	       <input type="text" name="password" required class="inputField form-control" value placeholder="Password">
+	    </div>	
+
+	    <div class="checkbox">
+          <label><input type="checkbox"/> Are you a student?</label>
+        </div>
+
+	    <div id="loginButton">
+	    	<div>
+		    	<input type="submit" class="button button-circle button-flat-primary" value="Submit" placeholder="Login" /> 
+	    	</div>
+	    </div>
+
+	    <div class="center">
+	    	<a href="#" class="forgotPasswrod">Forgot your password?</a>
+	    </div>
+	</div>
+
+</form>
+
 
 
 
