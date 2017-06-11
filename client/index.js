@@ -3,6 +3,7 @@ const app = express()
 const port = 5000
 const loopback_url = 'http://0.0.0.0:3000/api'
 var request = require('request')
+var bodyParser = require('body-parser');
 
 app.set('view engine', 'ejs');
 

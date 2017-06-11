@@ -1,0 +1,266 @@
+/************************
+Tinder Template by Miami
+************************/
+
+.tbg {
+    height: 720px;
+    width: 400px;
+    background-image: url("Backround - 2.png");
+    background-size: 100% 100%;
+    margin: 0 auto;
+    border: 1px solid #c0c0c0;
+}
+
+.tbgwrap { padding: 10px; }
+.theader { height: 65px; border-bottom: 1px solid #c0c0c0; }
+.theader i.fa-comments {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: right;
+    padding: 10px 20px;
+    position: relative;
+}
+.theader i.fa-cog {
+    color: #c0c0c0;
+    font-size: 40px;
+    display: inline-block;
+    float: left;
+    padding: 10px 20px;
+    position: relative;
+}
+.tlogo { width: 100px; margin: 0 auto; padding: 10px; }
+.tlogo img { width: 100px; }
+.tphoto {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    padding-bottom: 60px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #c0c0c0;
+}
+.style1{
+    text-align: center;
+    margin-left: 23px;
+    width: 87%;
+    margin-top: 155px;
+    border-top: .5px solid #8c8b8b;
+
+}
+.skill1 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill2 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill3 {
+
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+.skill4 {
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 23px;
+    display: inline-block;
+}
+
+.tphoto img {}
+* {text-shadow: none !important;}
+.tFirstName {
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;
+
+}
+.highSchool {
+    margin-left: 23px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;}
+.tSkillLabel {
+    margin-top: 4px;
+    margin-left: 23px;
+    text-align: left;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;}
+
+.tDescription {
+    margin-left: 23px;
+    margin-top: 30px;
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    color: white;}
+
+.flexFile {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+.arrowFormat {
+    float: right;
+    padding-right: 10px;
+    display: inline;
+}
+
+.tLastName {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    float: left;
+    margin-top: 5px;
+    color: white;}
+.yesButton {
+
+    display: inline-block;
+}
+.noButton {
+    display: inline-block;
+}
+.right {
+    width: 100px;
+    height: 100px;
+    transition: .5s;
+    float: left;
+    box-shadow: -2px 2px 0 rgb(255,255,255,.5);
+}
+.img-circle {
+    border-radius: 50%;
+}
+.round-button {
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display:block;
+    width:50px;
+    line-height:50px;
+    border: 2px solid #f5f5f5;
+    border-radius: 80%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #f5f5f5;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #262626;
+}
+.tname .age { font-weight: 200; }
+.tinfo { font-family: 'Helvetica', sans-serif; }
+.tinfo .fa-users, .tinfo .fa-book {
+    color: #c0c0c0;
+    float: right;
+    position: relative;
+    font-size: 24px;
+    padding: 12px;
+}
+.tcontrols {}
+.tno {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    left: 25px;
+    border: 10px solid #f0f0f0;
+}
+.tno i {
+    color: #ff695b;
+    font-size: 80px;
+    padding: 17px 28px;
+}
+.ti {
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    left: 12px;
+    top: 30px;
+    border: 10px solid #f0f0f0;
+}
+.ti .fa-info {
+    font-size: 23px;
+    padding: 15px 20px;
+    color: #398beb;
+}
+.tyes {
+    background-color: #fff;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    position: relative;
+    display: inline-block;
+    top: 26px;
+    left: 0px;
+    border: 10px solid #f0f0f0;
+}
+.tyes i {
+    color: #5de19c;
+    font-size: 60px;
+    padding: 35px 30px;
+}
+.credit {
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 2px 0px;
+}
+.credit a {
+    font-size: 7px;
+    letter-spacing: 5px;
+    color: #c0c0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    font-style: italic;
+}
