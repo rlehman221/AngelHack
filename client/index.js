@@ -1,31 +1,42 @@
-<<<<<<< HEAD
 
-
-const express = require('express');
-const app = express();
-var path = require('path');
-=======
 const express = require('express')  
 const app = express()  
 const port = 5000
 const loopback_url = 'http://0.0.0.0:3000/api'
 var request = require('request')
-var bodyParser = require('body-parser');
->>>>>>> 2db55d135fdfdd04695feb2ea260a4d093f88927
+
+var bodyParser = require('body-parser')
+var isUserLoggedIn = false;
+
 
 app.set('view engine', 'ejs');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+
+app.use(function (req, res, next) {
+  //console.log('Recieved request ',req,' at ', Date.now())
+  console.log("is user logged in ",isUserLoggedIn);
+
+
+  next();
+})
 
 app.get('/', (req, res) => {  
-
+  res.send("homepage");
+  /*
   request(loopback_url + '/students', function (error, response, body) {
     if(error)
-      throw error;
-    console.log('error:', error); // Print the error if one occurred 
-    console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
-    console.log('body:', body); // Print the HTML for the Google homepage. 
+      console.log('error')
+      console.log("loaded homepage")
+    //console.log('error:', error); // Print the error if one occurred 
+    //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
+    //console.log('body:', body); // Print the HTML for the Google homepage. 
     //res.render('index',body);
   });
+  */
 })
+
 
 app.get('/usertype', (req, res) => {  
   res.send('user type button');
@@ -43,23 +54,73 @@ app.get('/jobprofile', (req, res) => {
   res.send('job profile');
 })
 
-<<<<<<< HEAD
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+
+
+app.get('/studentprofile', (req, res) => {  
+  res.send('student profile');
+})
+
+app.get('/questionnaire', (req, res) => {  
+  res.send('questionnaire');
+})
+
+app.get('/addjob', (req, res) => {  
+  res.send('add job');
+})
+
+app.post('/login', (req, res) => {
+  var submittedEmail = req.body.email;
+  var submittedPW = req.body.password;
+  var queryObj = {"email":submittedEmail,"password":submittedPW};
+
+  var url;
+  if(req.body.isStudent == 'checked')
+      url = loopback_url + '/students?filter[where][email]=' + req.body.email + '&filter[where][password]=' + req.body.password;
+  else
+      url = loopback_url + '/businessowners?filter[where][email]=' + req.body.email + '&filter[where][password]=' + req.body.password;
+
+  request(url, function (error, response, body) {
+    if(error)
+      console.log('error')
+    console.log("response: ", body);
+    
+    var numJson = JSON.parse(body);
+    console.log(numJson.length);
+
+    if(numJson.length > 0){
+      console.log("user is now logged in")
+      isUserLoggedIn = true;
+      if(req.body.student == 'checked'){
+        res.redirect('/studentprofile');
+      }
+      else{
+        res.redirect('/jobprofile');
+      }
+    }
+    else{
+      isUserLoggedIn = false;
+      console.log("error: email/pass is incorrect")
+      res.redirect('/');
+    }
+
+
+    //console.log('error:', error); // Print the error if one occurred 
+    //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
+    //console.log('body:', body); // Print the HTML for the Google homepage. 
+    //res.render('index',body);
+  });
+
+})
+
+app.listen(port, (err) => {  
+  if (err) {
+    return console.log('An error has occurred', err)
+  }
+
+  console.log(`server is listening on ${port}`)
 })
 
 
-
-angular.module('buttonsDemo1', ['ngMaterial'])
-
-.controller('AppCtrl', function($scope) {
-  $scope.title1 = 'Button';
-  $scope.title4 = 'Warn';
-  $scope.isDisabled = true;
-
-  $scope.googleUrl = 'http://google.com';
-
-});
 
 
 
@@ -81,25 +142,3 @@ function changeToStudent(){
 	document.getElementById('student').style.display = "block";
 	document.getElementById('student').style.visibility = "visible";
 }
-
-=======
-app.get('/studentprofile', (req, res) => {  
-  res.send('student profile');
-})
-
-app.get('/questionnaire', (req, res) => {  
-  res.send('questionnaire');
-})
-
-app.get('/addjob', (req, res) => {  
-  res.send('add job');
-})
-
-app.listen(port, (err) => {  
-  if (err) {
-    return console.log('An error has occurred', err)
-  }
-
-  console.log(`server is listening on ${port}`)
-})
->>>>>>> 2db55d135fdfdd04695feb2ea260a4d093f88927
