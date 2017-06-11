@@ -1,5 +1,6 @@
 
 const express = require('express')  
+const path = require('path')
 const app = express()  
 const port = 5000
 const loopback_url = 'http://0.0.0.0:3000/api'
@@ -13,6 +14,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname + '/html'));
+app.use(express.static(__dirname + '/'));
 
 app.use(function (req, res, next) {
   //console.log('Recieved request ',req,' at ', Date.now())
@@ -23,7 +26,7 @@ app.use(function (req, res, next) {
 })
 
 app.get('/', (req, res) => {  
-  res.send("homepage");
+  res.sendFile(__dirname + '/html/login.html');
   /*
   request(loopback_url + '/students', function (error, response, body) {
     if(error)
@@ -51,10 +54,8 @@ app.get('/studentsignup', (req, res) => {
 })
 
 app.get('/jobprofile', (req, res) => {  
-  res.send('job profile');
+ res.sendFile(__dirname + '/html/profile.html');
 })
-
-
 
 app.get('/studentprofile', (req, res) => {  
   res.send('student profile');
